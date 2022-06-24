@@ -1,7 +1,17 @@
-const fibonacci = (num) =>{
-    if (num <= 1) return 1;
-    console.log(fibonacci(num-1) + fibonacci(num-2))
-    return fibonacci(num-1) + fibonacci(num-2)
+function calcular(num){
+    let fibonacci = [];
+    fibonacci[0] = 0;
+    fibonacci[1] = 1;
+    for (let i = 2; i < num; i++) {
+        fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+    }
+   for(let j = 0 ; j <= fibonacci.length; j++){
+        if(num === fibonacci[j]){
+            return `Este número está na sequência ${fibonacci[j]}`
+        }
+        
+        
+   }
+   return `Este número não está na sequência ${num}`
 }
-
-console.log(fibonacci(13))
+console.log(calcular(13))
