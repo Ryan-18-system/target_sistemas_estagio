@@ -12,3 +12,4 @@ function calculaPercentual(estado){
 } 
 
 console.log(calculaPercentual('es'))
+console.log(calculaPercentual('SP'))

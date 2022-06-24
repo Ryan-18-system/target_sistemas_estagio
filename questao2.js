@@ -14,4 +14,5 @@ function calcular(num){
    }
    return `Este número não está na sequência ${num}`
 }
-console.log(calcular(13))
+console.log(calcular(13))   // valor que está na sequência
+console.log(calcular(5))    // valor que não está na sequência

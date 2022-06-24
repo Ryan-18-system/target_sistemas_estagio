@@ -1,5 +1,5 @@
 const dado = require('./dados.json')
-const faturamentoCorrigido = dado.filter(valor => valor.valor > 0)
+const faturamentoCorrigido = dado.filter(valor => valor.valor > 0) // faturamento sem os dias que foram 0 no faturamento
 const mediaMensal = faturamentoCorrigido.reduce((contador,valor) => contador+ valor.valor,0)/faturamentoCorrigido.length
 const diasSuperiorMensal = faturamentoCorrigido.filter((contador)=> contador.valor > mediaMensal).length
 

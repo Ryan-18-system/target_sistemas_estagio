@@ -7,3 +7,4 @@ function reverseString(string){
 }
 
 console.log(reverseString('hello'))
+console.log(reverseString('Rafael Senhor'))
